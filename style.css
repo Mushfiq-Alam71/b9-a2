@@ -2,6 +2,7 @@
 
 .header-container {
   padding: 0 135px;
+  margin-top: 52px;
 }
 .main-container {
   padding: 0 135px;
@@ -48,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .explore-travel-container {
   background-image: url("./Images/Group\ 13\ \(1\)\ \(1\).png");
@@ -85,9 +87,8 @@
   color: #fff;
   font-family: Mulish;
   font-size: 64px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
+  margin: 24px auto;
 }
 .explore-travel-container p {
   color: #fff;
@@ -97,6 +98,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
+  margin-bottom: 48px;
 }
 .explore-travel-form input {
   width: 174px;
@@ -140,4 +142,88 @@
   align-items: flex-start;
   gap: 24px;
   border-radius: 8px;
+}
+.explore-travel-form .inputone {
+  margin-right: 24px;
+}
+.explore-travel-form .inputtwo {
+  margin-right: 24px;
+}
+.explore-travel-form .inputthree {
+  margin-right: 24px;
+}
+.explore-text p {
+  width: 676px;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+/* popular-tour section css */
+#popular-tour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.popular-tour-container {
+  display: flex;
+  flex-direction: row;
+  gap: 53px;
+}
+
+.popular-tour-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 577px;
+}
+.popular-tour-text h1 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.popular-tour-text p,
+li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.popular-tour-text li {
+  margin-bottom: 16px;
+}
+.popular-tour-text p {
+  /* 162.5% */
+  margin-top: 24px; /* 162.5% */
+  margin-bottom: 24px; /* 162.5% */
+}
+#popular-paragraph {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.popular-tour-text button {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  border: 0;
 }
