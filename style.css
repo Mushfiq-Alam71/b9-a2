@@ -263,14 +263,49 @@ li {
   margin-top: 0px;
   margin-bottom: 48px;
 }
+.destination-image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+}
+.destination-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.destination-image h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 0px;
+}
 .image-container-1,
 .image-container-2,
 .image-container-3 {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+.image-container-2 {
+}
+.choose-destination-container-images {
+  width: 1170px;
+}
+.choose-destination-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .image-container-2 {
   margin: 24px auto;
@@ -427,6 +462,9 @@ li {
   width: 610px;
   height: 424px;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .perfetct-place-container-image h2 {
   background: linear-gradient(
@@ -443,6 +481,11 @@ li {
   line-height: 36px;
   margin: 0 auto;
   border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* newsletter section css */
@@ -492,7 +535,7 @@ li {
   background: rgba(19, 19, 24, 0.1);
   margin-top: 24px;
   margin-bottom: 24px;
-  margin-left: 0px;
+  /* margin-left: 0px; */
 }
 .newsletter-form input {
   width: 393px;
@@ -544,6 +587,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 0px;
 }
 .newsletter-image-discount h1 {
   color: #fff;
@@ -553,6 +597,7 @@ li {
   font-weight: 800;
   line-height: normal;
   text-align: center;
+  margin-top: 0px;
 }
 
 .newsletter-image {
@@ -562,11 +607,12 @@ li {
   width: 672px;
   height: 422px;
   border-radius: 16px;
+  position: relative;
 }
 .newsletter-image-discount {
-  position: relative;
-  top: 225px;
-  left: 335px;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
 }
 
 /* footer container css */
@@ -616,18 +662,30 @@ li {
   align-items: center;
   justify-content: center;
 }
-.footer-container hr {
+/* .footer-container hr {
   width: 872px;
   height: 0px;
   background: rgba(15, 12, 12, 0.1);
   margin-top: 50px;
   margin-bottom: 50px;
+} */
+.footer-icon-container {
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  padding-bottom: 24px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .footer-copyright {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 24px;
 }
 
 /* small device (mobile) responsive css */
@@ -786,7 +844,7 @@ li {
     margin-bottom: 0px;
   }
   .why-choose-content-container h1,
-  img {
+  .why-choose-content-container img {
     padding-left: 1rem;
     margin-top: 0px;
     margin-bottom: 12px;
@@ -799,14 +857,22 @@ li {
     display: flex;
     flex-direction: column;
   }
-  .choose-destination-container-images div {
+  .image-container-1,
+  .image-container-2,
+  .image-container-3 {
     display: flex;
     flex-direction: column;
     /* padding: 20px; */
   }
-  .choose-destination-container-images div img {
+  .choose-destination-container-images img {
     width: 100%;
     object-fit: cover;
+  }
+  .choose-destination-container-images {
+    width: 100%;
+  }
+  .destination-image {
+    height: auto;
   }
   .ici3,
   .ici5,
@@ -814,5 +880,46 @@ li {
   .ici7 {
     height: 220px;
     border-radius: 16px;
+  }
+  .perfetct-place-container-text {
+    width: 100%;
+  }
+  .perfetct-place-container-image {
+    width: 100%;
+    height: 300px;
+  }
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .newsletter-form,
+  .newsletter-image {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .newsletter-form input {
+    width: 80%;
+  }
+
+  .newsletter-form button {
+    width: 85%;
+  }
+  .newsletter-form hr {
+    width: 80%;
+  }
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter-form h1 {
+    width: 100%;
+    text-align: left;
+    padding-left: 3rem;
+  }
+  .footer-text-container p {
+    width: 70%;
   }
 }
